@@ -1,54 +1,185 @@
-# 🌐 Element Inspector Website
+# 🔍 Element Inspector - Chrome Extension
 
-Welcome to the official website for **Element Inspector**, a professional Chrome extension for UI analysis and inspection.
+**Professional UI Analysis Toolkit for Developers & Designers**
 
-## 🔗 Live Website
-**https://thndrbladers.github.io/elementinspector.github.io/**
+Transform your web development workflow with Element Inspector - the most comprehensive DOM inspection and UI analysis extension for Chrome.
+
+## 🚀 Extension Overview
+
+Element Inspector is a powerful Chrome extension that provides advanced tools for analyzing, inspecting, and debugging web page elements. Built for developers, designers, and QA professionals who demand precision and efficiency.
+
+### ✨ Key Features
+
+- **🎯 Advanced Element Selection** - Click any element to inspect its properties
+- **📐 Precise Measurements** - Get exact dimensions, margins, and padding
+- **🎨 Color Analysis** - Extract colors with hex, RGB, and HSL values
+- **📝 CSS Property Inspector** - View computed styles and CSS rules
+- **📱 Responsive Testing** - Analyze elements across different screen sizes
+- **⚡ Performance Insights** - Identify layout and rendering issues
+- **🔍 DOM Tree Navigation** - Explore the complete document structure
+- **📊 Accessibility Checker** - Ensure your designs are accessible
 
 ---
 
-## 📋 About This Website
+## 📦 Installation Status
 
-This is a modern, responsive website built to showcase Element Inspector - a comprehensive UI analysis toolkit for developers, designers, and QA professionals. The website serves as the primary landing page and documentation hub for the extension.
+### 🔄 Chrome Web Store Review
+Element Inspector is currently under review for publication on the Chrome Web Store. The review process typically takes 1-7 business days.
 
-### ✨ Website Features
+**Status**: ⏳ **Under Review**  
+**Expected Availability**: Within 7 days  
+**Notification**: You'll be notified once it's live
 
-- **🎯 Interactive Extension Demo** - Experience the actual extension interface
-- **📱 Fully Responsive Design** - Perfect on desktop, tablet, and mobile
-- **🎨 Modern UI/UX** - Clean, professional design with smooth animations
-- **🔒 Privacy-First Documentation** - Comprehensive privacy policy
-- **📧 Direct Contact Integration** - Easy communication with the developer
-- **⚡ Fast Loading** - Optimized for performance and accessibility
+### 🛠️ Manual Installation (Developer Mode)
+
+While waiting for Chrome Web Store approval, you can install the extension manually:
+
+1. **Download Extension Files**
+   - Visit: [GitHub Repository](https://github.com/thndrbladers/elementinspector.github.io)
+   - Download the extension source code
+
+2. **Enable Developer Mode**
+   - Open Chrome and go to `chrome://extensions/`
+   - Toggle "Developer mode" in the top-right corner
+
+3. **Load Extension**
+   - Click "Load unpacked"
+   - Select the downloaded extension folder
+   - Element Inspector will appear in your extensions bar
+
+4. **Start Using**
+   - Click the Element Inspector icon
+   - Begin analyzing any webpage
 
 ---
 
-## 🏗️ Technical Architecture
+## 🌐 Official Website
 
-### Website Structure
-```
-docs/
-├── 📄 index.html          # Homepage with demo and installation
-├── 📄 privacy.html        # Detailed privacy policy
-├── 📄 contact.html        # Contact form and developer info
-├── 📄 DEPLOYMENT.md       # GitHub Pages setup guide
-├── 📄 .nojekyll          # Disable Jekyll processing
-└── 📁 assets/
-    ├── 📁 css/
-    │   ├── main.css       # Main website styles
-    │   └── popup.css      # Extension popup demo styles
-    ├── 📁 js/
-    │   └── main.js        # Website interactivity
-    └── 📁 images/
-        ├── icon16.png     # Extension icons
-        ├── icon48.png
-        └── icon128.png
-```
+**Live at**: [https://thndrbladers.github.io/elementinspector.github.io/](https://thndrbladers.github.io/elementinspector.github.io/)
 
-### Technology Stack
-- **HTML5** - Modern semantic markup
-- **CSS3** - Advanced styling with CSS Grid, Flexbox, and animations
-- **Vanilla JavaScript** - No frameworks, pure performance
-- **GitHub Pages** - Free, reliable static hosting
+### Website Features
+- **🎯 Extension Demo** - Try the interface before installing
+- **📚 Documentation** - Complete usage guides and tutorials
+- **🔒 Privacy Policy** - Transparent data handling practices
+- **📧 Support** - Direct contact with the development team
+- **📱 Mobile Friendly** - Access information on any device
+
+---
+
+## 🎯 Use Cases
+
+### For Developers
+- **Debug CSS Issues** - Quickly identify styling problems
+- **Responsive Design** - Test layouts across breakpoints
+- **Performance Analysis** - Optimize rendering and layout
+- **Code Quality** - Ensure semantic HTML structure
+
+### For Designers
+- **Design Verification** - Ensure implementation matches designs
+- **Color Extraction** - Get exact colors from any element
+- **Spacing Analysis** - Verify margins, padding, and alignment
+- **Typography Inspection** - Check fonts, sizes, and line heights
+
+### For QA Teams
+- **UI Testing** - Verify element properties and behavior
+- **Cross-browser Consistency** - Ensure uniform appearance
+- **Accessibility Testing** - Check compliance with WCAG guidelines
+- **Bug Documentation** - Capture detailed element information
+
+---
+
+## 🔧 Technical Specifications
+
+### Browser Compatibility
+- **Chrome** 88+ (Primary support)
+- **Chromium-based browsers** (Edge, Brave, Opera)
+- **Manifest V3** compliant for future-proof compatibility
+
+### Permissions
+- **Active Tab** - Analyze the current webpage only
+- **Storage** - Save user preferences locally
+- **No Network Access** - Complete privacy, no data transmitted
+
+### Performance
+- **Lightweight** - Minimal memory footprint (<2MB)
+- **Fast Execution** - Sub-millisecond element analysis
+- **Non-Intrusive** - Doesn't affect page performance
+- **Clean Removal** - No traces left when disabled
+
+---
+
+## 🔒 Privacy & Security
+
+Element Inspector is built with privacy as a core principle:
+
+- ✅ **No Data Collection** - Zero telemetry or analytics
+- ✅ **Local Processing** - All analysis happens in your browser
+- ✅ **No Network Requests** - Extension works completely offline
+- ✅ **Open Source** - Full transparency in functionality
+- ✅ **Minimal Permissions** - Only accesses current tab when active
+
+**Read Full Privacy Policy**: [Privacy Details](https://thndrbladers.github.io/elementinspector.github.io/privacy.html)
+
+---
+
+## 📞 Support & Contact
+
+### Get Help
+- **Email**: elementinspector.help@gmail.com
+- **Response Time**: Within 24 hours
+- **Website Contact**: [Contact Form](https://thndrbladers.github.io/elementinspector.github.io/contact.html)
+
+### Report Issues
+- **GitHub Issues**: [Report Bugs](https://github.com/thndrbladers/elementinspector.github.io/issues)
+- **Feature Requests**: Email with detailed requirements
+- **Security Issues**: Direct email for responsible disclosure
+
+---
+
+## 🎉 Coming Soon Features
+
+### Version 2.0 Roadmap
+- **🎨 Design System Analysis** - Identify design patterns and components
+- **📊 Performance Metrics** - Core Web Vitals integration
+- **🔍 Advanced Selectors** - XPath and custom selector support
+- **📱 Mobile Device Simulation** - Test on various device profiles
+- **🌐 Multi-language Support** - Interface in multiple languages
+
+### Community Features
+- **🤝 Team Collaboration** - Share analysis results
+- **📋 Template Library** - Pre-built inspection templates
+- **🎓 Learning Mode** - Guided tutorials for beginners
+- **🔗 Integration APIs** - Connect with development tools
+
+---
+
+## 📈 Why Choose Element Inspector?
+
+### Compared to Browser DevTools
+- **👆 One-Click Analysis** - No need to open DevTools
+- **🎯 Focused Interface** - Clean, distraction-free UI
+- **📊 Advanced Metrics** - More detailed analysis options
+- **💾 Save Results** - Export findings for documentation
+
+### Compared to Other Extensions
+- **🔒 Privacy Focused** - No data collection or tracking
+- **⚡ Better Performance** - Optimized for speed and efficiency
+- **🎨 Modern Design** - Beautiful, intuitive interface
+- **🛠️ Professional Features** - Built for serious development work
+
+---
+
+<div align="center">
+
+## 🌟 Ready to Transform Your Workflow?
+
+**Element Inspector will be available on Chrome Web Store soon!**
+
+[🌐 Visit Official Website](https://thndrbladers.github.io/elementinspector.github.io/) • [📧 Get Notified](mailto:elementinspector.help@gmail.com) • [🐙 View Source Code](https://github.com/thndrbladers/elementinspector.github.io)
+
+**Stay Updated**: Email us to receive notification when Element Inspector goes live on Chrome Web Store!
+
+</div>
 - **Progressive Enhancement** - Works without JavaScript
 
 ---

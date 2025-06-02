@@ -27,7 +27,6 @@
                     Element Inspector
                 </h1>
                 <p class="nav-tagline">Precision UI Analysis</p>
-                <p class="nav-developer">Developed by Rahul Dev Ghosh</p>
             </div><ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="index.html#demo" class="nav-link">Demo</a></li>
@@ -69,21 +68,7 @@
                         <p><a href="mailto:elementinspector.help@gmail.com">elementinspector.help@gmail.com</a></p>
                         <p class="info-note">Best for detailed inquiries, bug reports, and collaboration requests.</p>
                     </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">🐙</div>
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/thndrbladers/elementinspector.github.io" target="_blank">Element Inspector Repository</a></p>
-                        <p class="info-note">Report issues, contribute code, or explore the source.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">⭐</div>
-                        <h3>Chrome Web Store</h3>
-                        <p><a href="#" id="store-link">Rate & Review</a></p>
-                        <p class="info-note">Help others discover Element Inspector with your feedback.</p>
-                    </div>
-                </div>                <!-- Direct Contact -->
+                </div><!-- Direct Contact -->
                 <div class="contact-direct-section">
                     <h2>Get in Touch</h2>
                     <p class="contact-description">Have a question, suggestion, or found a bug? I'd love to hear from you!</p>
@@ -607,18 +592,6 @@
             }
         }
     </style>    <script>
-        // Update Chrome Web Store link
-        document.getElementById('store-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            const extensionId = 'YOUR_EXTENSION_ID';
-            
-            if (extensionId !== 'YOUR_EXTENSION_ID') {
-                window.open(`https://chrome.google.com/webstore/detail/${extensionId}`, '_blank');
-            } else {
-                alert('Extension is currently under review for the Chrome Web Store. Check back soon!');
-            }
-        });
-        
         // Copy email to clipboard functionality
         document.querySelectorAll('.email-link').forEach(link => {
             link.addEventListener('click', function(e) {

@@ -671,51 +671,78 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 16px;
   padding: 2.5rem;
   backdrop-filter: blur(15px);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
   text-align: center;
-  max-width: 600px;
+  transition: all 0.3s ease;
 }
 
 .method:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 40px rgba(100, 255, 218, 0.2);
-}
-
-.primary-method {
   border-color: var(--accent-color);
-  box-shadow: 0 8px 32px rgba(100, 255, 218, 0.1);
 }
 
 .method h3 {
   color: var(--accent-color);
   margin-bottom: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .method ol {
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  padding-left: 0;
-  list-style-position: inside;
   text-align: left;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
 }
 
 .method li {
+  color: var(--text-secondary);
   margin-bottom: 0.75rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.method .btn {
+  margin-top: 1rem;
+}
+
+/* Review Status Styling */
+.review-status {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.review-status p {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.review-status p:last-child {
+  margin-bottom: 0;
+}
+
+.review-status strong {
+  color: #ffc107;
+}
+
+.method h4 {
+  color: var(--accent-color);
+  margin: 2rem 0 1rem 0;
+  font-size: 1.1rem;
 }
 
 .method code {
   background: rgba(100, 255, 218, 0.1);
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  padding: 0.25rem 0.5rem;
-  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-  font-size: 0.9rem;
   color: var(--accent-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
 }
 
 /* Footer Enhancements */

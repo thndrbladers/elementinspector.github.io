@@ -233,22 +233,13 @@ function showInstallInstructions() {
         color: white;
         text-align: center;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    `;
-
-    modalContent.innerHTML = `
+    `;    modalContent.innerHTML = `
         <h3 style="color: #64ffda; margin-bottom: 1rem;">Extension Coming Soon!</h3>
         <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
-            Element Inspector is currently under review for the Chrome Web Store. 
-            Meanwhile, you can install it manually:
+            Extension will soon be available on Chrome Web Store.
         </p>
-        <ol style="text-align: left; margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
-            <li style="margin-bottom: 0.5rem;">Download the extension files from GitHub</li>
-            <li style="margin-bottom: 0.5rem;">Open Chrome and go to chrome://extensions/</li>
-            <li style="margin-bottom: 0.5rem;">Enable "Developer mode"</li>
-            <li style="margin-bottom: 0.5rem;">Click "Load unpacked" and select the extension folder</li>
-        </ol>
         <div style="display: flex; gap: 1rem; justify-content: center;">
-            <button id="download-btn" style="
+            <button id="close-modal" style="
                 background: linear-gradient(135deg, #64ffda, #00bcd4);
                 color: #1a1a2e;
                 border: none;
@@ -257,30 +248,14 @@ function showInstallInstructions() {
                 font-weight: 600;
                 cursor: pointer;
                 transition: all 0.3s ease;
-            ">Download from GitHub</button>
-            <button id="close-modal" style="
-                background: rgba(255, 255, 255, 0.1);
-                color: white;
-                border: 1px solid rgba(255, 255, 255, 0.3);
-                padding: 0.75rem 1.5rem;
-                border-radius: 8px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-            ">Close</button>
+            ">OK</button>
         </div>
     `;
 
     modal.appendChild(modalContent);
-    document.body.appendChild(modal);
-
-    // Event listeners
+    document.body.appendChild(modal);    // Event listeners
     document.getElementById('close-modal').addEventListener('click', () => {
         document.body.removeChild(modal);
-    });
-
-    document.getElementById('download-btn').addEventListener('click', () => {
-        window.open('https://github.com/thndrbladers/elementinspector.github.io', '_blank');
     });
 
     modal.addEventListener('click', (e) => {
@@ -297,7 +272,25 @@ function initSmoothScroll() {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+                let offsetTop;
+                
+                // Special handling for privacy page navigation to center sections
+                if (window.location.pathname.includes('privacy.html')) {
+                    const windowHeight = window.innerHeight;
+                    const targetHeight = target.offsetHeight;
+                    const navbarHeight = 70;
+                    
+                    // Calculate position to center the target element in viewport
+                    offsetTop = target.offsetTop - (windowHeight / 2) + (targetHeight / 2) - navbarHeight;
+                    
+                    // Ensure we don't scroll past the document bounds
+                    const maxScroll = document.documentElement.scrollHeight - windowHeight;
+                    offsetTop = Math.max(0, Math.min(offsetTop, maxScroll));
+                } else {
+                    // Default behavior for other pages
+                    offsetTop = target.offsetTop - 70; // Account for fixed navbar
+                }
+                
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
