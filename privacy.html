@@ -27,10 +27,9 @@
                     Element Inspector
                 </h1>
                 <p class="nav-tagline">Precision UI Analysis</p>
-                <p class="nav-developer">Developed by Rahul Dev Ghosh</p>
-            </div><ul class="nav-menu">
+            </div>            <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="index.html#demo" class="nav-link">Demo</a></li>
+                <li><a href="index.html#demo" class="nav-link">Preview</a></li>
                 <li><a href="index.html#installation" class="nav-link">Installation</a></li>
                 <li><a href="privacy.html" class="nav-link active">Privacy</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -60,18 +59,23 @@
 
         <section class="privacy-content">
             <div class="container">
-                <div class="content-wrapper">
-                    <!-- Table of Contents -->
+                <div class="content-wrapper">                    <!-- Table of Contents -->
                     <aside class="toc">
                         <h3>Contents</h3>
                         <ul>
                             <li><a href="#overview">Overview</a></li>
                             <li><a href="#data-collection">Data Collection</a></li>
+                            <li><a href="#permissions">Permissions</a></li>
                             <li><a href="#data-usage">How We Use Data</a></li>
                             <li><a href="#data-sharing">Data Sharing</a></li>
                             <li><a href="#data-storage">Data Storage</a></li>
-                            <li><a href="#user-rights">Your Rights</a></li>
                             <li><a href="#security">Security</a></li>
+                            <li><a href="#user-rights">Your Rights</a></li>
+                            <li><a href="#monetization">Future Monetization</a></li>
+                            <li><a href="#children">Children's Privacy</a></li>
+                            <li><a href="#compliance">International Compliance</a></li>
+                            <li><a href="#certifications">Privacy Certifications</a></li>
+                            <li><a href="#faq">FAQ</a></li>
                             <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </aside>
@@ -86,34 +90,63 @@
                                 <h4>🔒 Privacy-First Approach</h4>
                                 <p>Element Inspector operates entirely locally on your device. We do not collect, store, or transmit any personal data or browsing information to external servers.</p>
                             </div>
-                        </section>
-
-                        <section id="data-collection" class="privacy-section">
+                        </section>                        <section id="data-collection" class="privacy-section">
                             <h2>Data Collection</h2>
                             
                             <h3>What We DON'T Collect</h3>
                             <ul class="privacy-list">
-                                <li>Personal information (name, email, address, etc.)</li>
-                                <li>Browsing history or website URLs</li>
-                                <li>Webpage content or user interactions</li>
-                                <li>Cookies or tracking data</li>
+                                <li>Personal information (name, email, phone number)</li>
+                                <li>Browsing history or website visits</li>
+                                <li>Page content or analyzed elements</li>
+                                <li>IP addresses or location data</li>
+                                <li>Device information or browser fingerprinting</li>
+                                <li>Usage analytics or behavioral tracking</li>
+                                <li>Cookies or web beacons</li>
                                 <li>User credentials or authentication data</li>
-                                <li>Analytics or usage statistics</li>
-                                <li>Device information or system data</li>
                             </ul>
 
-                            <h3>Local Data Processing</h3>
-                            <p>Element Inspector processes the following data locally on your device:</p>
+                            <h3>What We DO Store Locally</h3>
                             <ul class="privacy-list">
-                                <li><strong>DOM Element Information:</strong> Temporary analysis of HTML elements on the current webpage</li>
-                                <li><strong>CSS Properties:</strong> Style information for visual analysis</li>
-                                <li><strong>Color Values:</strong> RGB, HEX, and HSL color data from inspected elements</li>
-                                <li><strong>Dimension Data:</strong> Width, height, position, and spacing measurements</li>
+                                <li><strong>Tool Preferences:</strong> Your selected analysis tools (stored in browser local storage)</li>
+                                <li><strong>Tab-Specific States:</strong> Temporary tool states per browser tab (cleared when tab closes)</li>
+                                <li><strong>Extension Settings:</strong> UI preferences and configuration options</li>
                             </ul>
                             
                             <div class="info-box">
-                                <p><strong>Important:</strong> All data processing happens locally in your browser. No information leaves your device.</p>
+                                <p><strong>Important:</strong> All data storage is local to your device. Nothing is transmitted to external servers.</p>
                             </div>
+                        </section>
+
+                        <section id="permissions" class="privacy-section">
+                            <h2>🔑 Permissions Explained</h2>
+                            <p>The extension requires minimal permissions for core functionality:</p>
+                            
+                            <h3>Required Permissions</h3>
+                            <div class="permissions-list">
+                                <div class="permission-item">
+                                    <strong>activeTab:</strong> Access to the currently active tab to analyze page elements
+                                    <br><em>Why needed:</em> To inject inspection tools and read element properties
+                                    <br><em>Data accessed:</em> Page DOM structure (not stored or transmitted)
+                                </div>
+                                <div class="permission-item">
+                                    <strong>scripting:</strong> Inject content scripts to enable element inspection
+                                    <br><em>Why needed:</em> To overlay analysis tools on web pages
+                                    <br><em>Data accessed:</em> None - only injects functionality
+                                </div>
+                                <div class="permission-item">
+                                    <strong>storage:</strong> Store user preferences locally
+                                    <br><em>Why needed:</em> Remember your tool selections between sessions
+                                    <br><em>Data stored:</em> Tool preferences only (no personal data)
+                                </div>
+                                <div class="permission-item">
+                                    <strong>tabs:</strong> Manage tool states across different browser tabs
+                                    <br><em>Why needed:</em> Maintain separate tool states per tab
+                                    <br><em>Data accessed:</em> Tab identification only (no content)
+                                </div>
+                            </div>
+
+                            <h3>Optional Permissions</h3>
+                            <p>Currently, no optional permissions are requested.</p>
                         </section>
 
                         <section id="data-usage" class="privacy-section">
@@ -127,20 +160,28 @@
                             </ul>
                             
                             <p>All processing is temporary and data is not stored permanently on your device.</p>
-                        </section>
-
-                        <section id="data-sharing" class="privacy-section">
+                        </section>                        <section id="data-sharing" class="privacy-section">
                             <h2>Data Sharing</h2>
                             <div class="highlight-box success">
                                 <h4>✅ Zero Data Sharing</h4>
                                 <p>Element Inspector does not share, sell, rent, or distribute any data to third parties. Since we don't collect personal data, there's nothing to share.</p>
                             </div>
-                              <h3>No Third-Party Services</h3>
-                            <p>Our extension does not integrate with:</p>
+                              
+                            <h3>What We DO NOT Use</h3>
                             <ul class="privacy-list">
-                                <li>Social media platforms</li>
+                                <li>Analytics services (Google Analytics, etc.)</li>
+                                <li>Crash reporting services</li>
+                                <li>Advertisement networks</li>
+                                <li>Social media integrations</li>
+                                <li>Content delivery networks for tracking</li>
+                                <li>External APIs for data processing</li>
                                 <li>Cloud storage services</li>
-                                <li>External APIs or databases</li>
+                            </ul>
+
+                            <h3>External Resources</h3>
+                            <ul class="privacy-list">
+                                <li>Chrome Web Store (for updates only)</li>
+                                <li>Extension icons (bundled with extension, no external loading)</li>
                             </ul>
                         </section>
 
@@ -159,9 +200,7 @@
                                 <li>User preferences persist until you uninstall the extension</li>
                                 <li>No browsing history or website data is retained</li>
                             </ul>
-                        </section>
-
-                        <section id="user-rights" class="privacy-section">
+                        </section>                        <section id="user-rights" class="privacy-section">
                             <h2>Your Rights</h2>
                             <p>Since Element Inspector doesn't collect personal data, traditional data protection rights don't apply. However, you have full control over:</p>
                             
@@ -177,53 +216,192 @@
                                 <div class="right-item">
                                     <h4>🗑️ Data Removal</h4>
                                     <p>All local data is automatically removed when you uninstall the extension.</p>
-                                </div>
-                                <div class="right-item">
+                                </div>                                <div class="right-item">
                                     <h4>🔍 Transparency</h4>
-                                    <p>Our source code is available on GitHub for full transparency.</p>
+                                    <p>Full transparency in our privacy practices and data handling.</p>
                                 </div>
                             </div>
+
+                            <h3>Your Privacy Rights</h3>
+                            <ul class="privacy-list">
+                                <li><strong>Right to Information:</strong> This privacy policy provides complete transparency</li>
+                                <li><strong>Right of Access:</strong> View your data via browser developer tools</li>
+                                <li><strong>Right to Rectification:</strong> Modify settings directly in the extension</li>
+                                <li><strong>Right to Erasure:</strong> Clear all data via browser extension settings</li>
+                                <li><strong>Right to Data Portability:</strong> Export via browser's extension management</li>
+                                <li><strong>Right to Object:</strong> Uninstall extension to stop all data processing</li>
+                            </ul>
                         </section>
 
-                        <section id="security" class="privacy-section">
-                            <h2>Security</h2>
-                            <h3>Local Processing Security</h3>
-                            <p>Element Inspector follows security best practices:</p>
+                        <section id="monetization" class="privacy-section">
+                            <h2>🎯 Future Monetization (Transparency)</h2>
+                            
+                            <h3>Current Status</h3>
                             <ul class="privacy-list">
-                                <li>All code execution is sandboxed within Chrome's extension environment</li>
-                                <li>No external network requests or data transmission</li>
-                                <li>Minimal permissions required (only access to active tab content)</li>
-                                <li>Regular security audits and updates</li>
+                                <li>Extension is currently free with no monetization during inception phase</li>
+                                <li>No advertisements or sponsored content</li>
+                                <li>No premium features requiring data collection</li>
+                                <li>All features available to all users without restrictions</li>
+                            </ul>
+
+                            <h3>Future Plans (If Applicable)</h3>
+                            <ul class="privacy-list">
+                                <li><strong>Potential Pro Features:</strong> May include additional analysis tools (data remains local)</li>
+                                <li><strong>Enhanced Functionality:</strong> Possible export capabilities (still privacy-first)</li>
+                                <li><strong>Payment Processing:</strong> Would use secure, GDPR-compliant payment processors if needed</li>
+                                <li><strong>Data Commitment:</strong> Will never sell or share user data regardless of future features</li>
+                            </ul>
+                        </section>
+
+                        <section id="children" class="privacy-section">
+                            <h2>👶 Children's Privacy (COPPA Compliance)</h2>
+                            <ul class="privacy-list">
+                                <li>Extension does not knowingly collect information from children under 13</li>
+                                <li>No age verification is performed as no personal data is collected</li>
+                                <li>Parents can safely allow children to use this extension</li>
+                            </ul>
+                        </section>
+
+                        <section id="compliance" class="privacy-section">
+                            <h2>🌍 International Privacy Compliance</h2>
+                            
+                            <h3>GDPR Compliance (European Union)</h3>
+                            <ul class="privacy-list">
+                                <li><strong>Legal Basis:</strong> Legitimate interest for providing extension functionality</li>
+                                <li><strong>Data Minimization:</strong> Only essential data (tool preferences) is stored</li>
+                                <li><strong>Right to Erasure:</strong> Users can clear all data via browser settings</li>
+                                <li><strong>Data Portability:</strong> Settings can be exported through browser's extension data export</li>
+                                <li><strong>No Data Processing:</strong> No personal data is processed or analyzed</li>
+                            </ul>
+
+                            <h3>CCPA Compliance (California)</h3>
+                            <ul class="privacy-list">
+                                <li><strong>No Sale of Data:</strong> We do not sell personal information</li>
+                                <li><strong>No Data Sharing:</strong> No personal information is shared with third parties</li>
+                                <li><strong>Access Rights:</strong> Users can view stored data via browser developer tools</li>
+                                <li><strong>Deletion Rights:</strong> Users can delete all data via browser settings</li>
+                            </ul>
+
+                            <h3>Other Jurisdictions</h3>
+                            <ul class="privacy-list">
+                                <li>Extension complies with privacy laws worldwide through zero data collection approach</li>
+                                <li>No jurisdiction-specific data localization requirements apply</li>
+                            </ul>
+                        </section>
+
+                        <section id="certifications" class="privacy-section">
+                            <h2>🏆 Privacy Certifications</h2>
+                            
+                            <h3>Current Certifications</h3>
+                            <ul class="privacy-list">
+                                <li><strong>Privacy by Design:</strong> Extension architecture follows privacy-first principles</li>
+                                <li><strong>Zero-Trust Model:</strong> No external dependencies for core functionality</li>
+                            </ul>
+
+                            <h3>Planned Certifications</h3>
+                            <ul class="privacy-list">
+                                <li><strong>SOC 2 Type II:</strong> For enterprise version (if developed)</li>
+                                <li><strong>ISO 27001:</strong> Information security management (future consideration)</li>
+                            </ul>
+                        </section>
+
+                        <section id="faq" class="privacy-section">
+                            <h2>❓ Frequently Asked Questions</h2>
+                            
+                            <div class="faq-item">
+                                <h4>Q: Can you see what websites I visit?</h4>
+                                <p><strong>A:</strong> No. The extension only activates when you manually enable it on a specific tab.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h4>Q: Do you track how I use the extension?</h4>
+                                <p><strong>A:</strong> No. We don't implement any analytics or usage tracking.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h4>Q: Is my analyzed data stored anywhere?</h4>
+                                <p><strong>A:</strong> No. All analysis happens in real-time and nothing is saved.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h4>Q: Can other extensions see Element Inspector's data?</h4>
+                                <p><strong>A:</strong> No. Each extension operates in its own isolated environment.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h4>Q: What happens if I uninstall the extension?</h4>
+                                <p><strong>A:</strong> All local data (tool preferences) is automatically deleted.</p>
+                            </div>
+
+                            <div class="highlight-box">
+                                <h4>📋 Summary</h4>
+                                <p><strong>Element Inspector is designed to be completely privacy-safe:</strong></p>
+                                <ul class="privacy-list">
+                                    <li>✅ Zero data collection</li>
+                                    <li>✅ 100% local operation</li>
+                                    <li>✅ No external connections</li>
+                                    <li>✅ Transparent permissions</li>
+                                    <li>✅ User control over all data</li>
+                                    <li>✅ Compliance with international privacy laws</li>
+                                </ul>
+                            </div>
+                        </section><section id="security" class="privacy-section">
+                            <h2>🛡️ Data Security and Protection</h2>
+                            
+                            <h3>Local-Only Operation</h3>
+                            <ul class="privacy-list">
+                                <li><strong>100% Local Processing:</strong> All analysis happens within your browser</li>
+                                <li><strong>No External Connections:</strong> Extension never communicates with external servers</li>
+                                <li><strong>No Cloud Storage:</strong> No data is uploaded or synchronized to cloud services</li>
+                                <li><strong>Isolated Execution:</strong> Extension runs in sandboxed environment</li>
                             </ul>
                             
-                            <h3>Permissions Explanation</h3>
-                            <div class="permissions-list">
-                                <div class="permission-item">
-                                    <strong>activeTab:</strong> Allows the extension to interact with the currently active tab for element inspection
-                                </div>
-                                <div class="permission-item">
-                                    <strong>storage:</strong> Enables saving your tool preferences locally
-                                </div>
-                            </div>
-                        </section>
+                            <h3>Data Retention</h3>
+                            <ul class="privacy-list">
+                                <li><strong>Persistent Settings:</strong> Tool preferences stored until you clear browser data</li>
+                                <li><strong>Temporary States:</strong> Tab-specific states cleared when tabs are closed</li>
+                                <li><strong>Manual Deletion:</strong> All data can be cleared via browser extension settings</li>
+                            </ul>
 
-                        <section id="contact" class="privacy-section">
-                            <h2>Contact Us</h2>
-                            <p>If you have questions about this Privacy Policy or Element Inspector, please contact us:</p>
+                            <h3>Cross-Platform Considerations</h3>
+                            <ul class="privacy-list">
+                                <li>Extension data is isolated per browser installation</li>
+                                <li>No synchronization between different browsers or devices</li>
+                                <li>Each browser maintains its own local settings</li>
+                                <li>Extension updates delivered through Chrome Web Store</li>
+                                <li>No personal data transmitted during update process</li>
+                            </ul>
+                        </section>                        <section id="contact" class="privacy-section">
+                            <h2>📞 Contact Information</h2>
                             
+                            <h3>Privacy Officer Contact</h3>
                             <div class="contact-info">
                                 <div class="contact-item">
                                     <strong>Developer:</strong> Rahul Dev Ghosh
-                                </div>                                <div class="contact-item">
+                                </div>
+                                <div class="contact-item">
                                     <strong>Email:</strong> <a href="mailto:elementinspector.help@gmail.com">elementinspector.help@gmail.com</a>
                                 </div>
                                 <div class="contact-item">
-                                    <strong>GitHub:</strong> <a href="https://github.com/thndrbladers/elementinspector.github.io" target="_blank">Element Inspector Repository</a>
+                                    <strong>Subject Line:</strong> "Element Inspector Privacy Inquiry"
+                                </div>                                <div class="contact-item">
+                                    <strong>Response Time:</strong> Within 48 hours for privacy-related questions
                                 </div>
                             </div>
                             
-                            <h3>Updates to This Policy</h3>
-                            <p>We may update this Privacy Policy to reflect changes in our practices or for legal reasons. Any updates will be posted on this page with a new "Last Updated" date.</p>
+                            <h3>🔄 Policy Updates</h3>
+                            
+                            <h4>Notification of Changes</h4>
+                            <ul class="privacy-list">
+                                <li><strong>Major Changes:</strong> Will be communicated via extension update notes</li>
+                                <li><strong>Version History:</strong> All policy versions maintained for transparency</li>
+                                <li><strong>User Action:</strong> Continued use constitutes acceptance of updated policy</li>
+                            </ul>
+
+                            <h4>Change Log</h4>
+                            <div class="info-box">
+                                <p><strong>v1.0 (June 1, 2025):</strong> Initial privacy policy for Element Inspector Extension</p>
+                            </div>
                         </section>
                     </article>
                 </div>
@@ -240,11 +418,10 @@
                     <p class="developer">Developed by Rahul Dev Ghosh</p>
                 </div>
                 
-                <div class="footer-links">
-                    <div class="footer-section">
+                <div class="footer-links">                    <div class="footer-section">
                         <h4>Product</h4>
                         <ul>
-                            <li><a href="index.html#demo">Demo</a></li>
+                            <li><a href="index.html#demo">Preview</a></li>
                             <li><a href="index.html#installation">Installation</a></li>
                         </ul>
                     </div>
@@ -489,9 +666,25 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-        
-        .contact-item a:hover {
+          .contact-item a:hover {
             text-decoration: underline;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-item h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .faq-item p {
+            margin-bottom: 0;
         }
         
         .nav-link.active {
