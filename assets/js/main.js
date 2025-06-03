@@ -273,24 +273,18 @@ function initSmoothScroll() {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 let offsetTop;
-                
-                // Special handling for privacy page navigation to center sections
                 if (window.location.pathname.includes('privacy.html')) {
-                    const windowHeight = window.innerHeight;
-                    const targetHeight = target.offsetHeight;
-                    const navbarHeight = 70;
-                    
-                    // Calculate position to center the target element in viewport
-                    offsetTop = target.offsetTop - (windowHeight / 2) + (targetHeight / 2) - navbarHeight;
-                    
-                    // Ensure we don't scroll past the document bounds
-                    const maxScroll = document.documentElement.scrollHeight - windowHeight;
+                    // Use bounding rect for accurate position relative to viewport
+                    const navbarOffset = 100; // Increased for more space
+                    const rect = target.getBoundingClientRect();
+                    // Scroll so the section is just below the navbar
+                    offsetTop = window.scrollY + rect.top - navbarOffset;
+                    // Clamp to document bounds
+                    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
                     offsetTop = Math.max(0, Math.min(offsetTop, maxScroll));
                 } else {
-                    // Default behavior for other pages
-                    offsetTop = target.offsetTop - 70; // Account for fixed navbar
+                    offsetTop = target.offsetTop - 70;
                 }
-                
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
