@@ -21,35 +21,28 @@ Element Inspector is a powerful Chrome extension that provides advanced tools fo
 
 ---
 
-## 📦 Installation Status
+## 📦 Installation
 
-### 🔄 Chrome Web Store Review
-Element Inspector is currently under review for publication on the Chrome Web Store. The review process typically takes 1-7 business days.
+### 🛒 Chrome Web Store Installation
+Element Inspector is now available on the Chrome Web Store for secure and automatic installation.
 
-**Status**: ⏳ **Under Review**  
-**Expected Availability**: Within 7 days  
-**Notification**: You'll be notified once it's live
+**Status**: ✅ **Available Now**  
+**Installation**: Quick and secure via Chrome Web Store  
+**Updates**: Automatic updates ensure you always have the latest features
 
-### 🛠️ Manual Installation (Developer Mode)
+#### How to Install:
+1. **Visit Chrome Web Store**
+   - Go to: [Element Inspector - Chrome Web Store](https://chromewebstore.google.com/detail/element-inspector-precisi/oogiokppjhndhhpfkbfnnffhlphedohh)
 
-While waiting for Chrome Web Store approval, you can install the extension manually:
+2. **Add to Chrome**
+   - Click "Add to Chrome" button
+   - Confirm installation by clicking "Add extension"
 
-1. **Download Extension Files**
-   - Visit: [GitHub Repository](https://github.com/thndrbladers/elementinspector.github.io)
-   - Download the extension source code
+3. **Start Using**
+   - Pin the extension to your toolbar for easy access
+   - Click the Element Inspector icon to begin analyzing any webpage
 
-2. **Enable Developer Mode**
-   - Open Chrome and go to `chrome://extensions/`
-   - Toggle "Developer mode" in the top-right corner
-
-3. **Load Extension**
-   - Click "Load unpacked"
-   - Select the downloaded extension folder
-   - Element Inspector will appear in your extensions bar
-
-4. **Start Using**
-   - Click the Element Inspector icon
-   - Begin analyzing any webpage
+> **Security Note**: Installing from Chrome Web Store ensures you get the verified, secure version with automatic updates.
 
 ---
 
@@ -173,11 +166,11 @@ Element Inspector is built with privacy as a core principle:
 
 ## 🌟 Ready to Transform Your Workflow?
 
-**Element Inspector will be available on Chrome Web Store soon!**
+**Element Inspector is now available on Chrome Web Store!**
 
-[🌐 Visit Official Website](https://thndrbladers.github.io/elementinspector.github.io/) • [📧 Get Notified](mailto:elementinspector.help@gmail.com) • [🐙 View Source Code](https://github.com/thndrbladers/elementinspector.github.io)
+[🌐 Visit Official Website](https://thndrbladers.github.io/elementinspector.github.io/) • [📥 Install from Chrome Web Store](https://chromewebstore.google.com/detail/element-inspector-precisi/oogiokppjhndhhpfkbfnnffhlphedohh) • [🐙 View Source Code](https://github.com/thndrbladers/elementinspector.github.io)
 
-**Stay Updated**: Email us to receive notification when Element Inspector goes live on Chrome Web Store!
+**Get Started**: Click the link above to install Element Inspector directly from Chrome Web Store!
 
 </div>
 - **Progressive Enhancement** - Works without JavaScript
@@ -405,7 +398,7 @@ MIT License - Feel free to use this website structure for your own projects
 
 **🌟 Star this repository if you find it helpful!**
 
-[🌐 Visit Website](https://thndrbladers.github.io/elementinspector.github.io/) • [📥 Install Extension](https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID) • [📧 Get Support](mailto:elementinspector.help@gmail.com)
+[🌐 Visit Website](https://thndrbladers.github.io/elementinspector.github.io/) • [📥 Install Extension](https://chromewebstore.google.com/detail/element-inspector-precisi/oogiokppjhndhhpfkbfnnffhlphedohh) • [📧 Get Support](mailto:elementinspector.help@gmail.com)
 
 ---
 
