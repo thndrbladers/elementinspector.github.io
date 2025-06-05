@@ -188,13 +188,12 @@ function initInstallButton() {
         if (button) {
             button.addEventListener('click', (e) => {
                 e.preventDefault();
-                
-                // Check if Chrome Web Store URL is available
-                const extensionId = 'YOUR_EXTENSION_ID'; // Will be replaced after Chrome Web Store approval
+                  // Check if Chrome Web Store URL is available
+                const extensionId = 'oogiokppjhndhhpfkbfnnffhlphedohh'; // Element Inspector Chrome Web Store ID
                 
                 if (extensionId !== 'YOUR_EXTENSION_ID') {
                     // Extension is published, redirect to Chrome Web Store
-                    window.open(`https://chrome.google.com/webstore/detail/${extensionId}`, '_blank');
+                    window.open(`https://chromewebstore.google.com/detail/element-inspector-precisi/${extensionId}`, '_blank');
                 } else {
                     // Extension not yet published, show instructions
                     showInstallInstructions();
